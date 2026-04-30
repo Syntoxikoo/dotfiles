@@ -1,0 +1,29 @@
+// Project tasks configuration. See https://zed.dev/docs/tasks for documentation.
+//
+// Example:
+[
+  {
+    "label": "UV: Run $ZED_FILENAME",
+    "command": "uv run $ZED_FILE",
+    "use_new_terminal": false,
+    "allow_concurrent_runs": false,
+    "reveal": "never",
+    "show_command": false,
+  },
+  {
+    "label": "UV: Run module $ZED_FILENAME",
+    "command": "uv run -m $ZED_FILE",
+    "use_new_terminal": false,
+    "allow_concurrent_runs": false,
+    "reveal": "never",
+    "show_command": false,
+  },
+  {
+    "label": "UV: Run Selection",
+    "command": "uv run -n base python -c \"$ZED_SELECTED_TEXT\"",
+    "use_new_terminal": false,
+    "allow_concurrent_runs": false,
+    "reveal": "never",
+    "show_command": false,
+  },
+]

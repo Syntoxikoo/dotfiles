@@ -1,0 +1,5 @@
+*
+!.aerospace.toml
+!.config/
+!.config/zed/**
+!.config/gitui/**

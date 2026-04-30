@@ -1,0 +1,103 @@
+// Zed keymap
+//
+// For information on binding keys, see the Zed
+// documentation: https://zed.dev/docs/key-bindings
+//
+// To see the default key bindings run `zed: open default keymap`
+// from the command palette.
+[
+  {
+    "context": "Workspace",
+    "bindings": {
+      // "shift shift": "file_finder::Toggle"
+    },
+  },
+  {
+    "context": "Editor && vim_mode == insert",
+    "bindings": {
+      // "j k": "vim::NormalBefore"
+    },
+  },
+  {
+    "context": "vim_mode == normal",
+    "bindings": {
+      "cmd-:": "vim::ToggleComments",
+    },
+  },
+  {
+    "context": "vim_mode == visual",
+    "bindings": {
+      "cmd-:": "vim::ToggleComments",
+    },
+  },
+  {
+    "context": "Workspace",
+    "bindings": {
+      "cmd-j": "terminal_panel::Toggle",
+    },
+  },
+  {
+    "context": "vim_mode == visual",
+    "bindings": {
+      "k j": "vim::SwitchToNormalMode",
+    },
+  },
+  {
+    "context": "((Editor && vim_mode == waiting) && (vim_operator == ys || vim_operator == cs))",
+    "bindings": {
+      "k j": "vim::SwitchToNormalMode",
+    },
+  },
+  {
+    "context": "vim_mode == insert",
+    "bindings": {
+      "k j": "vim::SwitchToNormalMode",
+    },
+  },
+  {
+    "context": "Workspace",
+    "bindings": {
+      "ctrl-cmd-k": [
+        "tab_switcher::Toggle",
+        {
+          "select_last": true,
+        },
+      ],
+    },
+  },
+  {
+    "bindings": {
+      "cmd-shift-e": "workspace::ActivateNextPane",
+    },
+  },
+  // {
+  //   "bindings": {
+  //     "cmd-r": "workspace::ToggleRightDock",
+  //   },
+  // },
+  {
+    "context": "Workspace",
+    "bindings": {
+      "ctrl-cmd-j": "tab_switcher::Toggle",
+    },
+  },
+  {
+    "context": "!Editor",
+    "bindings": { "j": "menu::SelectNext", "k": "menu::SelectPrevious" },
+  },
+  {
+    "bindings": {
+      "cmd-shift-d": "debug_panel::Toggle"
+    }
+  },
+  {
+    "bindings": {
+      "cmd-b": "project_panel::Toggle"
+    }
+  },
+  {
+    "bindings": {
+      "cmd-r": "agent::Toggle"
+    }
+  }
+]

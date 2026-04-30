@@ -1,0 +1,246 @@
+// Zed settings
+//
+// For information on how to configure Zed, see the Zed
+// documentation: https://zed.dev/docs/configuring-zed
+//
+// To see all of Zed's default settings without changing your
+// custom settings, run `zed: open default settings` from the
+// command palette (cmd-shift-p / ctrl-shift-p)
+{
+  "collaboration_panel": {
+    "dock": "right",
+  },
+  "diff_view_style": "unified",
+  "search": {
+    "center_on_match": true,
+  },
+  "git_panel": {
+    "dock": "left",
+    "tree_view": true,
+  },
+  "use_system_window_tabs": true,
+
+  "file_scan_exclusions": [
+    ".obsidian/",
+    ".git/",
+    "*.DS_Store",
+    "htmlcov",
+    ".ruff_cache",
+    ".pytest_cache",
+    ".mypy_cache",
+    ".hypothesis",
+    ".benchmarks",
+    ".cleanup-reports",
+    "__pycache__",
+    ".coverage",
+    ".trash",
+    ".venv/",
+  ],
+
+  "languages": {
+    "Python": {
+      "show_edit_predictions": true,
+      // "inlay_hints": { "edit_debounce_ms": 100, "enabled": true },
+      // "semantic_tokens": "combined",
+      "language_servers": ["ruff", "ty"],
+    },
+  },
+  "show_edit_predictions": false,
+  "ssh_connections": [
+    {
+      "host": "hpc-dtu",
+      "args": [],
+      "projects": [
+        {
+          "paths": ["/zhome/41/a/214323"],
+        },
+        {
+          "paths": [
+            "/zhome/41/a/214323/Deep-learning-for-segmentation-of-micro-tomography-images/./",
+          ],
+        },
+      ],
+    },
+    {
+      "host": "191.96.53.10",
+      "username": "root",
+      "args": [],
+      "projects": [
+        {
+          "paths": ["/root"],
+        },
+      ],
+    },
+  ],
+  "edit_predictions": {
+    "ollama": {
+      "prompt_format": "infer",
+      "max_output_tokens": 128,
+      "model": "qwen3.5:4b",
+    },
+    "provider": "zed",
+    "mode": "eager",
+  },
+  "agent_servers": {
+    "pi-acp": {
+      "type": "registry",
+    },
+    "OpenCode": {
+      "type": "custom",
+      "command": "opencode",
+      "args": ["acp"],
+    },
+  },
+  "agent": {
+    "sidebar_side": "right",
+    "dock": "right",
+    "tool_permissions": {
+      "default": "allow",
+    },
+    "default_profile": "ask",
+    "profiles": {
+      "planning-work": {
+        "default_model": {
+          "provider": "copilot_chat",
+          "model": "gemini-3-pro-preview",
+        },
+        "name": "Planning_work",
+        "tools": {
+          "copy_path": true,
+          "move_path": false,
+          "list_directory": true,
+          "fetch": true,
+          "find_path": true,
+          "grep": true,
+          "create_directory": true,
+          "edit_file": true,
+          "thinking": true,
+          "now": false,
+          "open": true,
+          "read_file": true,
+        },
+        "enable_all_context_servers": false,
+        "context_servers": {
+          "mcp-server-context7": {
+            "tools": {
+              "query-docs": true,
+            },
+          },
+        },
+      },
+      "ui-interaction-expert": {
+        "name": "UI_interaction_expert",
+        "tools": {},
+        "enable_all_context_servers": false,
+        "context_servers": {},
+      },
+      "document": {
+        "name": "Document",
+        "tools": {},
+        "enable_all_context_servers": false,
+        "context_servers": {},
+      },
+    },
+    "default_model": {
+      "effort": "high",
+      "enable_thinking": true,
+      "provider": "deepseek",
+      "model": "deepseek-v4-flash",
+    },
+    "model_parameters": [],
+  },
+  "context_servers": {
+    "mcp-server-context7": {
+      "enabled": true,
+      "settings": {
+        "context7_api_key": "ctx7sk-cab3b9ca-4dec-4fd9-937f-1a40ef561fce",
+      },
+    },
+    "mcp-server-github": {
+      "enabled": false,
+      "settings": {
+        "github_personal_access_token": "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",
+      },
+    },
+  },
+  "icon_theme": "Catppuccin Mocha",
+  "vim_mode": true,
+  "terminal": {
+    "shell": "system",
+    "toolbar": {
+      "breadcrumbs": false,
+    },
+    "font_family": "0xProto Nerd Font",
+    "env": { "UV_ENV_FILE": ".env" },
+  },
+  "telemetry": {
+    "diagnostics": false,
+    "metrics": false,
+  },
+  "base_keymap": "VSCode",
+  "relative_line_numbers": "enabled",
+  "gutter": {
+    "line_numbers": true,
+    "folds": false,
+  },
+  "minimap": {
+    "show": "never",
+  },
+  "autosave": "on_focus_change",
+  "buffer_font_fallbacks": ["3270 Nerd Font", "Courier New", "monospace"],
+  "buffer_font_family": "0xProto Nerd Font",
+  "linked_edits": true,
+  "ui_font_size": 16,
+  "buffer_font_size": 16,
+  "theme": {
+    "mode": "system",
+    "light": "Catppuccin Latte",
+    "dark": "Catppuccin Mocha",
+  },
+  "title_bar": {
+    "show_user_menu": false,
+    "show_user_picture": true,
+    "show_onboarding_banner": false,
+  },
+  "tab_bar": { "show_tab_bar_buttons": false, "show": false },
+  "toolbar": { "quick_actions": false },
+  // "status_bar": { "experimental.show": false },
+  "project_panel": {
+    "dock": "left",
+    "hide_root": true,
+    "hide_hidden": false,
+    "auto_fold_dirs": false,
+    "scrollbar": { "show": "never" },
+    "starts_open": false,
+    "indent_guides": { "show": "never" },
+  },
+  "outline_panel": {
+    "file_icons": true,
+    "dock": "left",
+    "scrollbar": { "show": "never" },
+  },
+  "file_finder": {
+    "modal_max_width": "small",
+    "include_channels": false,
+    "include_ignored": "indexed",
+  },
+  "scrollbar": { "show": "never" },
+  "indent_guides": { "coloring": "indent_aware" },
+  "agent_buffer_font_size": 16,
+  "agent_ui_font_size": 16,
+  "drag_and_drop_selection": { "enabled": false },
+  // "seed_search_query_from_cursor": "never",
+  "extend_comment_on_newline": false,
+  "colorize_brackets": true,
+  "auto_indent_on_paste": false,
+  "inline_code_actions": false,
+  "when_closing_with_no_tabs": "keep_window_open",
+  "lsp": {
+    "tinymist": {
+      "settings": {
+        "exportPdf": "onSave",
+        "outputPath": "$root/$name",
+      },
+    },
+  },
+}

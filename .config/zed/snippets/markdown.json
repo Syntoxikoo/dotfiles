@@ -1,0 +1,37 @@
+{
+  "SKILL Template": {
+    "prefix": "agskill",
+    "body": [
+      "---",
+      "name: ${1:Name this skill}",
+      "description: ${2:Describe what this skill does in one sentence. Describe when the skill should be used in one sentence.}",
+      "---",
+      "",
+      "# Purpose",
+      "",
+      "${3:qqq}",
+      "",
+      "## Variables",
+      "",
+      "${4:SOME_VAR}: \"${5:some value}\"",
+      "",
+      "## Instructions",
+      "",
+      "${6:qqq}",
+      "",
+      "## Workflow",
+      "",
+      "1. ${7:qqq}",
+      "2. ${8:qqq}",
+      "3. ${9:qqq}",
+      "",
+      "## Cookbook",
+      "",
+      "<If: ${10}>",
+      "",
+      "<Then: ${11}>",
+      "",
+      "<Examples: ${12:*if needed*}>"
+    ]
+  }
+}
