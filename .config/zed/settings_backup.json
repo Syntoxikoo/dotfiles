@@ -37,32 +37,6 @@
     },
   },
   "show_edit_predictions": false,
-  "ssh_connections": [
-    {
-      "host": "hpc-dtu",
-      "args": [],
-      "projects": [
-        {
-          "paths": ["/zhome/41/a/214323"],
-        },
-        {
-          "paths": [
-            "/zhome/41/a/214323/Deep-learning-for-segmentation-of-micro-tomography-images/./",
-          ],
-        },
-      ],
-    },
-    {
-      "host": "191.96.53.10",
-      "username": "root",
-      "args": [],
-      "projects": [
-        {
-          "paths": ["/root"],
-        },
-      ],
-    },
-  ],
   "edit_predictions": {
     "provider": "zed",
     "mode": "subtle",
@@ -127,22 +101,6 @@
       "model": "claude-haiku-4.5",
     },
     "model_parameters": [],
-  },
-  "context_servers": {
-    "mcp-server-context7": {
-      "source": "extension",
-      "enabled": true,
-      "settings": {
-        "context7_api_key": "ctx7sk-cab3b9ca-4dec-4fd9-937f-1a40ef561fce",
-      },
-    },
-    "mcp-server-github": {
-      "source": "extension",
-      "enabled": false,
-      "settings": {
-        "github_personal_access_token": "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",
-      },
-    },
   },
   "icon_theme": "Catppuccin Mocha",
   "vim_mode": true,
