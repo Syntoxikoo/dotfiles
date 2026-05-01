@@ -3,3 +3,4 @@
 !.config/
 !.config/zed/**
 !.config/gitui/**
+.DS_Store
